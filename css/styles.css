@@ -36,7 +36,7 @@ ol {
   list-style: none;
 }
 
-button {
+/*button {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
   display: inline-block;
@@ -46,7 +46,7 @@ button {
   text-align: center;
   font-family: inherit;
   cursor: pointer;
-}
+}*/
 
 address {
   font-style: normal;
@@ -247,6 +247,13 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--trans), color var(--trans);
 }
@@ -263,7 +270,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  border: none;
+  border: transparent;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
+  font-family: inherit;
+  cursor: pointer;
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
   transition: background-color var(--trans), color var(--trans);
@@ -693,6 +707,7 @@ body {
 .footer-soc-link:focus .footer-soc-icon {
   fill: var(--primary-white-color);
 }
+/*      Модальне вікно      */
 
 .backdrop {
   width: 100%;
@@ -703,12 +718,28 @@ body {
 }
 
 .modal {
-  min-width: 528px;
+  width: 528px;
   height: 581px;
   background-color:#ffffff;
   position: absolute;
+  border-radius: 4px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 4px;
+  
+}
+
+.modal-close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
