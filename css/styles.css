@@ -589,6 +589,8 @@ body {
 .work-link {
   display: block;
   text-decoration: none;
+  transition: box-shadow var(--trans) 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .work-top-wrap {
@@ -600,8 +602,8 @@ body {
 .work-link:hover,
 .work-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-  outline: none;
+  0px 1px 1px rgba(0, 0, 0, 0.12);
+  outline: transparent;
 }
 .work-link:hover .work-top-text {
   transform: translateY(0);
